@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500&display=swap');
+
+:root {
+    --primary: #10b981;
+}
+
+* {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.tailwind-config {
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+.heading-font {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.hero-bg {
+    background: radial-gradient(circle at 30% 20%, rgba(16, 185, 129, 0.15) 0%, transparent 50%),
+        linear-gradient(90deg, #020617 0%, #0f172a 100%);
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #10b981;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+.card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 25px 25px 0 -10px rgba(16, 185, 129, 0.15);
+}
+
+.logo-glow {
+    filter: drop-shadow(0 0 12px rgba(16, 185, 129, 0.5));
+}
